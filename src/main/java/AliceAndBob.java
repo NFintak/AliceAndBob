@@ -8,9 +8,9 @@ public class AliceAndBob {
 
 	System.out.println("Your name: ");
 	
-	String name = String.parseString(scan.nextLine());
+	String name = scan.nextLine();
 
-	if (name.isEqual(person1) || name.isEqual(person2)) {
+	if (person1.equals(name) || person2.equals(name)) {
 	    System.out.println("Hello " + name);
 	} else {
 	    System.out.println("You are neither Alice nor Bob");
