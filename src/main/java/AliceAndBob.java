@@ -1,4 +1,4 @@
-import java.util.Scanner
+import java.util.Scanner;
 
 public class AliceAndBob {
     public static void main(String[] args) {
@@ -8,7 +8,13 @@ public class AliceAndBob {
 
 	System.out.println("Your name: ");
 	
-	String name = String.toString(scan.nextLine());
+	String name = String.parseString(scan.nextLine());
+
+	if (name.isEqual(person1) || name.isEqual(person2)) {
+	    System.out.println("Hello " + name);
+	} else {
+	    System.out.println("You are neither Alice nor Bob");
+	}
 	
     }
 }
